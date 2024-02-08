@@ -43,36 +43,7 @@
     <p style="font-size: 24px;">testing text ganna add grids soon</p> 
   </div>
 
-  <div class="volumecontainer" id="volumeSliderContainer" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
-    <center>
-      <p class="volumetxt">Volume</p>
-      <input type="range" min="0" max="1" step="0.01" value="0.2" id="volumeSlider" class="volumeslider">
-    </center>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function() {
-      var audio = document.getElementById("backgroundMusic");
-      var volumeSlider = document.getElementById("volumeSlider");
-      var volumeSliderContainer = document.getElementById("volumeSliderContainer");
   
-      // Update volume when slider value changes
-      volumeSlider.addEventListener("input", function() {
-        audio.volume = volumeSlider.value;
-        if (audio.paused) {
-          audio.play(); // Start playing audio if it's not already playing
-        }
-        audio.muted = false; // Unmute if slider is interacted with
-      });
-  
-      // Set initial volume slider value based on the muted attribute
-      if (audio.muted) {
-        volumeSlider.value = 0;
-      } else {
-        volumeSlider.value = audio.volume;
-      }
-    });
-  </script>
 
   <script>
     function myFunction() {
