@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <audio id="backgroundMusic" src="Lucki - Randomly (Audio).mp3" autoplay muted loop></audio>
+  <audio id="backgroundMusic" src="Lucki - Randomly (Audio).mp3" loop></audio>
 
   <div class="nav">
     <div class="container1">
@@ -55,19 +55,23 @@
       var audio = document.getElementById("backgroundMusic");
       var volumeSlider = document.getElementById("volumeSlider");
       var volumeSliderContainer = document.getElementById("volumeSliderContainer");
-
+  
       // Update volume when slider value changes
       volumeSlider.addEventListener("input", function() {
         audio.volume = volumeSlider.value;
+        if (audio.paused) {
+          audio.play(); // Start playing audio if it's not already playing
+        }
         audio.muted = false; // Unmute if slider is interacted with
       });
-
+  
       // Set initial volume slider value based on the muted attribute
       if (audio.muted) {
         volumeSlider.value = 0;
       } else {
         volumeSlider.value = audio.volume;
       }
+    });
   </script>
 
   <script>
