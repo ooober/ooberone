@@ -54,14 +54,20 @@
     document.addEventListener("DOMContentLoaded", function() {
       var audio = document.getElementById("backgroundMusic");
       var volumeSlider = document.getElementById("volumeSlider");
+      var volumeSliderContainer = document.getElementById("volumeSliderContainer");
 
-      // Set default value
-      audio.volume = 0;
-
+      // Update volume when slider value changes
       volumeSlider.addEventListener("input", function() {
         audio.volume = volumeSlider.value;
+        audio.muted = false; // Unmute if slider is interacted with
       });
-    });
+
+      // Set initial volume slider value based on the muted attribute
+      if (audio.muted) {
+        volumeSlider.value = 0;
+      } else {
+        volumeSlider.value = audio.volume;
+      }
   </script>
 
   <script>
