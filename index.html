@@ -1,41 +1,78 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>OOBER</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-    <meta property="og:title" content="oober">
-    <meta property="og:description" content="oober">
-    <meta property="og:image" content="attachments">
-    <meta property="og:url" content="https://oober.lol%22%3E/">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oober.</title>
+  <link rel="stylesheet" href="/index.css">
 
-    <link rel="stylesheet" href="home.css">
-    <link rel="icon" type="image/x-icon" href="/9C116D93-DE56-4C50-AC4D-2DEFFE058DF9.jpeg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header">
-        <div>
-            <a href="/">
-                <img src="/sillyoober.png" class="silly">
-            </a>
-        </div>
-        <div style="display: flex; align-items: center; justify-content: center;">
-            <a href="/purchase.html">
-                <p class="navbutton">Purchase</p>
-            </a>
-            <a href="/signer.html">
-                <p class="navbutton">Signer</p>
-            </a>
-        </div>
+
+  <audio id="backgroundMusic" src="Lucki - Randomly (Audio).mp3" autoplay loop></audio>
+
+  <div class="nav">
+    <div class="container1">
+      <a href="/index.html" class="containing">
+        <p class="active">Oober.lol</p>
+      </a>
     </div>
-<p></p>
-<p></p>
+    <div id="myLinks" class="linkcontain">
+      <a href="#" class="links">Purchase</a>
+      <a href="#" class="links">Contact</a>
+      <a href="#" class="links">Signer</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="hamburger-menu-svgrepo-com.svg">
+    </a>
+  </div>
 
-    <div class="container">
-        <div class="section">
-            <h2>hi </h2>
-            <p2>hi nigga, please shut up<p2>
-          
-        </div>
+  <div class="parallax">
+    <div class="title-container">
+      <p class="title">
+        oober.
+      </p>
+    </div>
+    <div class="gradient-overlay"></div>
+  </div>
 
-   
+  <div class="content" style="height: 1000px;"> 
+    <p style="font-size: 24px;">testing text ganna add grids soon</p> 
+  </div>
+
+  <div class="volumecontainer" id="volumeSliderContainer" style="position: fixed; bottom: 20px; right: 20px; z-index: 999;">
+    <center>
+      <p class="volumetxt">Volume</p>
+      <input type="range" min="0" max="1" step="0.01" value="0.2" id="volumeSlider" class="volumeslider">
+    </center>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var audio = document.getElementById("backgroundMusic");
+      var volumeSlider = document.getElementById("volumeSlider");
+
+      // Set default value
+      audio.volume = 0.2;
+
+      volumeSlider.addEventListener("input", function() {
+        audio.volume = volumeSlider.value;
+      });
+    });
+  </script>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
