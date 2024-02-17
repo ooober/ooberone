@@ -12,7 +12,18 @@
 </head>
 <body>
 
-  <audio id="backgroundMusic" src="Lucki - Randomly (Audio).mp3" loop></audio>
+  <!-- Popup container -->
+  <div id="popup" class="popup-container" onclick="playMusic()">
+    <center>
+      <p>Click to enter.</p>
+    </center>
+  </div>
+
+  <!-- Music player -->
+  <audio id="music" controls loop style="display: none;">
+    <source src="Lucki - Randomly (Audio).mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
 
   <div class="nav">
     <div class="container1">
@@ -53,6 +64,16 @@
       } else {
         x.style.display = "block";
       }
+    }
+  </script>
+
+  <script>
+    // Function to play music and close the popup
+    function playMusic() {
+      var audio = document.getElementById('music');
+      audio.volume = 0.2; // Set the volume to 0.2
+      audio.play(); // Play the music
+      document.getElementById('popup').style.display = 'none'; // Hide the popup
     }
   </script>
 </body>
