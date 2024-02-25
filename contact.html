@@ -1,1 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oober.</title>
+  <link rel="stylesheet" href="/index.css">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Popup container -->
+  <div id="popup" class="popup-container" onclick="playMusic()">
+    <center>
+      <p>Click to enter.</p>
+    </center>
+  </div>
+
+  <!-- Music player -->
+  <audio id="music" controls loop style="display: none;">
+    <source src="Tay-K -  Saran Pack.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="nav">
+    <div class="container1">
+      <a href="/index.html" class="containing">
+        <p class="active">oober</p>
+      </a>
+    </div>
+    <div id="myLinks" class="linkcontain">
+      <a href="#" class="links">Purchase</a>
+      <a href="#" class="links">Contact</a>
+      <a href="#" class="links">Signer</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <img src="hamburger-menu-svgrepo-com.svg">
+    </a>
+  </div>
+
+  <div class="parallax">
+    <div class="title-container">
+      <p class="title">
+        contact.
+      </p>
+    </div>
+    <div class="gradient-overlay"></div>
+  </div>
+
+  <div class="content" style="height: 1000px;text-align: center;"> 
+    <div class="contact-container">
+      <h2>Contact Information</h2>
+      <p>Information 3</p>
+      <p>Information 2 </p>
+      <p>Information 1</p>
+    </div>
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+  <script>
+    // Function to play music and close the popup
+    function playMusic() {
+      var audio = document.getElementById('music');
+      audio.volume = 0.2; // Set the volume to 0.2
+      audio.play(); // Play the music
+      document.getElementById('popup').style.display = 'none'; // Hide the popup
+    }
+  </script>
+</body>
+</html>
