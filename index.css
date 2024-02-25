@@ -177,3 +177,189 @@ p {
   z-index: 9999;
   overflow: hidden;
 }
+/* Purchase page container styles and for other container styles */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-box {
+  width: 300px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  background: rgba(5, 5, 5, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin: 0 auto; 
+  margin-top: 10px;
+}
+
+
+.p2 {
+  font-family: 'Poppins';
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.buy-button {
+  background-color: #3a87fe;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+-webkit-box-shadow:0px 0px 157px 34px rgba(58,136,254,0.65);
+-moz-box-shadow: 0px 0px 157px 34px rgba(58,136,254,0.65);
+box-shadow: 0px 0px 157px 34px rgba(58,136,254,0.65);
+}
+
+
+/* End of purchase page container styles */
+
+/* contact information container/styles */
+
+.contact-container {
+  width: 330px;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+  background: rgba(5, 5, 5, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-top: 10px;
+
+}
+
+.contact-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-family: 'Poppins';
+  text-shadow: rgba(58,136,254,0.71) 0px 0px 23px;
+}
+
+.contact-container p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-button {
+  background-color: #3a87fe;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* end of contact styles */
+
+/* signer styles */
+form {
+  font-family: 'Poppins', sans-serif;
+  background-color: #2222;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  width: 320px;
+  margin: 0 auto;
+  background: rgba(5, 5, 5, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+  color: #ebebeb;
+}
+
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #74a7ff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color: #333; 
+  color: #c2c2c2;
+  background: rgba(5, 5, 5, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+form input[type="submit"] {
+  background-color: #3a87fe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  background: rgba(5, 5, 5, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.custom-file-upload {
+  background-color: #3a87fe;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: rgba(5, 5, 5, 0);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.custom-file-upload:hover {
+  background-color: #1e5be6;
+}
+
+
+
+/* end of signer styles */
+
